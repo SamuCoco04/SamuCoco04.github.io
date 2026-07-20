@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <a className="logo" href="#home">
+        <a className="logo" href="#home" aria-label="Samuel Coco">
           Samuel Coco
         </a>
 
@@ -26,6 +26,11 @@ function App() {
 
       <main>
         <section id="home" className="hero">
+          <div className="availability-status">
+            <span className="status-dot" aria-hidden="true" />
+            {t('hero.status')}
+          </div>
+
           <p className="eyebrow">{t('hero.greeting')}</p>
 
           <h1>{t('hero.name')}</h1>
@@ -33,6 +38,47 @@ function App() {
           <h2>{t('hero.role')}</h2>
 
           <p className="hero-description">{t('hero.description')}</p>
+
+          <p className="availability">{t('hero.availability')}</p>
+
+          <div className="hero-actions">
+            <a className="button button-primary" href="#projects">
+              {t('hero.viewProjects')}
+            </a>
+
+            <a
+              className="button button-secondary"
+              href="mailto:samuel.coco.dev@gmail.com"
+            >
+              {t('hero.contact')}
+            </a>
+          </div>
+
+          <div className="professional-links">
+            <a
+              href="https://github.com/SamuCoco04"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {t('hero.github')}
+            </a>
+
+            <span aria-hidden="true">·</span>
+
+            <a
+              href="https://www.linkedin.com/in/samuel-coco-delfa"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {t('hero.linkedin')}
+            </a>
+
+            <span aria-hidden="true">·</span>
+
+            <a href="mailto:samuel.coco.dev@gmail.com">
+              samuel.coco.dev@gmail.com
+            </a>
+          </div>
         </section>
       </main>
     </div>
