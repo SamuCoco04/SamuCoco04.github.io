@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
+import AboutSection from './sections/AboutSection'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import './App.css'
 
@@ -80,6 +81,7 @@ function App() {
             </a>
           </div>
         </section>
+        <AboutSection />
       </main>
     </div>
   )
