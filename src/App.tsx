@@ -1,7 +1,10 @@
 import { useTranslation } from 'react-i18next'
 
 import AboutSection from './sections/AboutSection'
+import ContactSection from './sections/ContactSection'
+import EducationSection from './sections/EducationSection'
 import ProjectsSection from './sections/ProjectsSection'
+import Footer from './components/Footer'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import './App.css'
 
@@ -84,7 +87,10 @@ function App() {
         </section>
         <AboutSection />
         <ProjectsSection />
+        <EducationSection />
+        <ContactSection />
       </main>
+      <Footer />
     </div>
   )
 }

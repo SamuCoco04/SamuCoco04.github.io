@@ -206,6 +206,243 @@ const es = {
       repositoryAction: 'Explorar el repositorio de orchestrator-b',
     },
   },
+  education: {
+    kicker: 'Formación y perfil técnico',
+    title:
+      'Una base de ingeniería construida entre proyectos, universidad y experiencia internacional.',
+    introduction:
+      'Mi formación combina fundamentos de ingeniería del software, experiencia práctica en proyectos completos y una movilidad Erasmus que reforzó mi autonomía, adaptación y capacidad para trabajar en entornos internacionales.',
+    academic: {
+      kicker: 'Trayectoria académica',
+      title: 'Dos etapas de una misma formación.',
+      indicators: {
+        completed: { value: 'Completado', label: 'grado universitario' },
+        duration: { value: '4 años', label: 'periodo de finalización' },
+        erasmus: { value: 'Erasmus+', label: 'experiencia internacional' },
+        tfg: { value: '9,5/10', label: 'calificación del TFG' },
+      },
+      tfgAction: 'Consultar el TFG y ErasmusMate',
+      entries: {
+        degree: {
+          type: 'Etapa principal',
+          institution: 'Universidad de Sevilla',
+          period: '2022–2026',
+          title: 'Grado en Ingeniería Informática · Ingeniería del Software',
+          location: 'Sevilla, España',
+          status: 'Finalizado en cuatro años',
+          description:
+            'Formación generalista en informática con especialización en ingeniería del software, orientada al análisis, diseño, construcción, validación y gestión de sistemas software.',
+          highlights: {
+            engineering: 'Ingeniería del software, análisis, diseño y arquitectura',
+            development: 'Desarrollo web, orientación a objetos y bases de datos',
+            quality: 'Pruebas, calidad, seguridad y gestión de proyectos',
+            systems: 'Redes, sistemas y documentación técnica',
+          },
+        },
+        erasmus: {
+          type: 'Extensión internacional · Erasmus+',
+          institution: 'Universidade Lusófona',
+          period: '2025–2026',
+          title: 'Movilidad académica internacional',
+          location: 'Oporto, Portugal',
+          status: 'Entorno académico y cotidiano multicultural',
+          description:
+            'Una experiencia internacional que amplió mi formación técnica y reforzó mi autonomía, adaptación y capacidad para estudiar y colaborar en un contexto multicultural.',
+          highlights: {
+            international: 'Experiencia académica internacional',
+            adaptability: 'Mayor autonomía y capacidad de adaptación',
+            languages: 'Uso cotidiano de inglés y portugués',
+            technical: 'Software, redes, seguridad y gestión de proyectos',
+          },
+        },
+      },
+    },
+    technical: {
+      kicker: 'Perfil técnico',
+      title: 'Tecnologías y herramientas',
+      introduction:
+        'Organizadas por ámbitos y por evidencia real de uso. Las etiquetas describen el contexto, no un nivel de dominio inventado.',
+      selectorLabel: 'Categorías del perfil técnico',
+      activeCategory: 'Ámbito seleccionado',
+      evidenceLabel: 'Contextos y evidencias',
+      experience: {
+        primary: 'Uso en proyectos propios',
+        academic: 'Experiencia académica',
+        complementary: 'Experiencia complementaria',
+      },
+      categories: {
+        frontend: {
+          shortLabel: 'Frontend',
+          title: 'Frontend',
+          context: 'Producto e interfaces web',
+          description:
+            'Tecnologías utilizadas para construir interfaces tipadas, responsive, accesibles e internacionalizadas, desde el diseño de componentes hasta el despliegue.',
+          evidence: {
+            portfolio: 'Portfolio personal bilingüe desarrollado con React, TypeScript y CSS.',
+            erasmusmate: 'Interfaces y flujos institucionales y sociales de ErasmusMate.',
+            academic: 'Proyectos y prácticas de desarrollo web durante la carrera.',
+          },
+        },
+        backend: {
+          shortLabel: 'Backend y datos',
+          title: 'Backend y datos',
+          context: 'Servicios, persistencia y lógica',
+          description:
+            'Experiencia construyendo y estudiando servicios, APIs, modelos persistentes y bases de datos en proyectos propios y académicos.',
+          evidence: {
+            erasmusmate: 'Persistencia y reglas de negocio del prototipo full stack ErasmusMate.',
+            orchestrator: 'Pipeline experimental y tratamiento estructurado de datos en orchestrator-b.',
+            academic: 'Prácticas universitarias con Java, Spring, Kotlin y bases de datos SQL.',
+          },
+        },
+        quality: {
+          shortLabel: 'Calidad y DevOps',
+          title: 'Pruebas, calidad y DevOps',
+          context: 'Validación, trazabilidad y entrega',
+          description:
+            'Herramientas y prácticas para comprobar el comportamiento, mantener trazabilidad y automatizar la integración y el despliegue.',
+          evidence: {
+            erasmusmate: 'Matriz de pruebas, Vitest, Playwright y trazabilidad de ErasmusMate.',
+            portfolio: 'Integración y despliegue automático del portfolio mediante GitHub Actions.',
+            academic: 'Pruebas unitarias y ciclo de construcción en proyectos Java académicos.',
+          },
+        },
+        design: {
+          shortLabel: 'Diseño y modelado',
+          title: 'Diseño y modelado',
+          context: 'Del problema a la arquitectura',
+          description:
+            'Artefactos y técnicas para definir el dominio, comunicar decisiones y mantener conectados requisitos, workflows, arquitectura e implementación.',
+          evidence: {
+            tfg: 'Artefactos generados, revisados y auditados durante el TFG.',
+            erasmusmate: 'Modelo de dominio, workflows, reglas y diseño de ErasmusMate.',
+            academic: 'Diseño de interfaces, presentaciones y proyectos académicos.',
+          },
+        },
+        ai: {
+          shortLabel: 'Desarrollo con IA',
+          title: 'Desarrollo asistido por IA',
+          context: 'Proceso dirigido y validado',
+          description:
+            'Herramientas utilizadas dentro de un proceso dirigido por el ingeniero para apoyar requisitos, revisión, implementación, pruebas, documentación y análisis crítico; no como sustitución del conocimiento técnico.',
+          evidence: {
+            requirements: 'Preparación y revisión de requisitos y artefactos de ingeniería.',
+            engineering: 'Implementación, pruebas y documentación en las iteraciones de ErasmusMate.',
+            validation: 'Comparación de resultados, detección de inconsistencias y validación humana.',
+          },
+        },
+        complementary: {
+          shortLabel: 'Sistemas y otras',
+          title: 'Sistemas, redes y otras herramientas',
+          context: 'Base académica complementaria',
+          description:
+            'Experiencia académica y cotidiana que complementa el perfil principal de ingeniería software sin presentarse como una especialización independiente.',
+          evidence: {
+            academic: 'Prácticas académicas de sistemas, redes y análisis de tráfico.',
+            context: 'Entornos y herramientas utilizados durante la carrera y los proyectos.',
+          },
+        },
+      },
+    },
+    skills: {
+      react: 'React', nextjs: 'Next.js', typescript: 'TypeScript', javascript: 'JavaScript',
+      html: 'HTML', css: 'CSS', tailwind: 'Tailwind CSS', vite: 'Vite', i18next: 'i18next',
+      nodejs: 'Node.js', java: 'Java', spring: 'Spring Boot', python: 'Python', kotlin: 'Kotlin',
+      rest: 'APIs REST', prisma: 'Prisma', sql: 'SQL', sqlite: 'SQLite', mysql: 'MySQL', mariadb: 'MariaDB',
+      vitest: 'Vitest', playwright: 'Playwright', unitTesting: 'Pruebas unitarias', e2e: 'Pruebas end-to-end',
+      git: 'Git', github: 'GitHub', actions: 'GitHub Actions', ci: 'Integración continua', maven: 'Maven', tomcat: 'Tomcat',
+      mermaid: 'Mermaid', figma: 'Figma', balsamiq: 'Balsamiq', domain: 'Modelado de dominio',
+      workflows: 'Workflows', architecture: 'Arquitectura software', businessRules: 'Reglas de negocio', documentation: 'Documentación técnica',
+      codex: 'Codex', chatgpt: 'ChatGPT', gemini: 'Gemini', notebooklm: 'NotebookLM',
+      modelApis: 'APIs de modelos de IA', json: 'JSON', validation: 'Validación', qualityGates: 'Puertas de calidad',
+      linux: 'Linux', gns3: 'GNS3', wireshark: 'Wireshark', vscode: 'VS Code', eclipse: 'Eclipse', networks: 'Redes',
+    },
+    evidence: {
+      kicker: 'Evidencia de uso',
+      title: 'Dónde las he aplicado',
+      items: {
+        erasmusmate: {
+          title: 'ErasmusMate',
+          description:
+            'Aplicación full stack utilizada como caso práctico del TFG, con flujos institucionales, capa social, pruebas y trazabilidad.',
+          action: 'Ver el caso de estudio',
+        },
+        portfolio: {
+          title: 'Portfolio personal',
+          description:
+            'Portfolio bilingüe, responsive, accesible y desplegado automáticamente mediante GitHub Pages.',
+          action: 'Ver repositorio del portfolio',
+        },
+        orchestrator: {
+          title: 'orchestrator-b',
+          description:
+            'Pipeline experimental de generación, revisión cruzada, validación y trazabilidad de artefactos software.',
+          action: 'Ver repositorio de orchestrator-b',
+        },
+        academic: {
+          title: 'Formación académica',
+          description:
+            'Tecnologías utilizadas en asignaturas, prácticas y proyectos de la carrera.',
+        },
+      },
+    },
+    languages: {
+      kicker: 'Comunicación',
+      title: 'Idiomas',
+      items: {
+        spanish: { name: 'Español', level: 'Nativo' },
+        english: { name: 'Inglés', level: 'B1' },
+        portuguese: {
+          name: 'Portugués',
+          level: 'Experiencia académica y cotidiana durante la movilidad Erasmus',
+        },
+      },
+      note: 'Interés en continuar mejorando y acreditando el nivel de inglés.',
+    },
+    continuous: {
+      kicker: 'Aprendizaje continuo',
+      title: 'Una base en evolución',
+      description:
+        'Mi objetivo es seguir ampliando esta base mediante proyectos desplegados, experiencia profesional y formación dirigida a las necesidades reales de cada puesto.',
+    },
+  },
+  contact: {
+    kicker: 'Contacto',
+    title: '¿Construimos algo juntos?',
+    description:
+      'Estoy disponible para nuevas oportunidades en España o en el extranjero, tanto en remoto como en entornos híbridos o presenciales.',
+    objective:
+      'Busco mi primera oportunidad profesional en ingeniería del software, desarrollo full stack, datos o inteligencia artificial aplicada. Me interesa incorporarme a un equipo en el que pueda seguir aprendiendo, asumir responsabilidades progresivamente y contribuir a construir productos software de calidad.',
+    availability:
+      'España · Remoto, híbrido o presencial · Abierto a reubicación internacional',
+    emailAction: 'Contactar por correo',
+    linkedinAction: 'Ver LinkedIn',
+    githubAction: 'Ver GitHub',
+    cv: {
+      kicker: 'Documento profesional',
+      title: 'Currículum',
+      description: 'Consulta o descarga mi currículum en español o inglés.',
+      metadata: 'PDF · 1 página · Formato compatible con sistemas ATS',
+      currentLanguage: 'Versión principal según el idioma de la web',
+      language: {
+        es: 'Currículum en español',
+        en: 'Currículum en inglés',
+      },
+      primaryAction: {
+        es: 'Descargar CV en español',
+        en: 'Descargar CV en inglés',
+      },
+      secondaryAction: {
+        es: 'CV en español',
+        en: 'CV en inglés',
+      },
+    },
+  },
+  footer: {
+    credit: 'Diseñado y desarrollado por Samuel Coco.',
+    navigationLabel: 'Enlaces del pie de página',
+    backToTop: 'Volver al inicio',
+  },
   language: {
     spanish: 'Español',
     english: 'Inglés',
