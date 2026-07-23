@@ -7,6 +7,10 @@ function ExternalArrow() {
   return <span aria-hidden="true">↗</span>
 }
 
+function assetUrl(path: string) {
+  return `${import.meta.env.BASE_URL}${path}`
+}
+
 function ProjectsSection() {
   const { t } = useTranslation()
   const reportUrl = `${import.meta.env.BASE_URL}${erasmusMate.report.publicPath}`
@@ -26,8 +30,12 @@ function ProjectsSection() {
       <article className="project-opening" aria-labelledby="erasmusmate-title">
         <figure className="project-cover">
           <img
-            src={erasmusMate.coverImage}
+            src={assetUrl(erasmusMate.coverImage.path)}
             alt={t('projects.cover.alt')}
+            width={erasmusMate.coverImage.width}
+            height={erasmusMate.coverImage.height}
+            loading="lazy"
+            decoding="async"
           />
           <figcaption>{t('projects.cover.caption')}</figcaption>
         </figure>
@@ -74,7 +82,14 @@ function ProjectsSection() {
 
         <figure className="project-proof">
           <div className="project-proof-image">
-            <img src={erasmusMate.finalImage} alt={t('projects.cover.finalAlt')} />
+            <img
+              src={assetUrl(erasmusMate.finalImage.path)}
+              alt={t('projects.cover.finalAlt')}
+              width={erasmusMate.finalImage.width}
+              height={erasmusMate.finalImage.height}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <figcaption>
             <strong>{t('projects.cover.finalLabel')}</strong>
@@ -120,8 +135,12 @@ function ProjectsSection() {
                     {iteration.id}
                   </span>
                   <img
-                    src={iteration.image}
+                    src={assetUrl(iteration.image.path)}
                     alt={t(`${iteration.translationKey}.imageAlt`)}
+                    width={iteration.image.width}
+                    height={iteration.image.height}
+                    loading="lazy"
+                    decoding="async"
                   />
                 </figure>
 
@@ -175,8 +194,12 @@ function ProjectsSection() {
                       <summary>{t('projects.architecture.action')}</summary>
                       <figure>
                         <img
-                          src={iteration.architectureImage}
+                          src={assetUrl(iteration.architectureImage.path)}
                           alt={t('projects.architecture.alt')}
+                          width={iteration.architectureImage.width}
+                          height={iteration.architectureImage.height}
+                          loading="lazy"
+                          decoding="async"
                         />
                         <figcaption>{t('projects.architecture.caption')}</figcaption>
                       </figure>

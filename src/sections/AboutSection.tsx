@@ -52,7 +52,7 @@ function AboutSection() {
 
           <blockquote>{t('about.tfg.conclusion')}</blockquote>
 
-          <div className="tfg-tags" aria-label="Tecnologías del proyecto">
+          <div className="tfg-tags" aria-label={t('about.tfg.technologiesLabel')}>
             <span>Next.js</span>
             <span>React</span>
             <span>TypeScript</span>

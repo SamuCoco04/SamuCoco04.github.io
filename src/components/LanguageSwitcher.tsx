@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 
 function LanguageSwitcher() {
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
   const currentLanguage = i18n.resolvedLanguage ?? 'es'
 
   const changeLanguage = (language: 'es' | 'en') => {
@@ -9,10 +9,16 @@ function LanguageSwitcher() {
   }
 
   return (
-    <div className="language-switcher" aria-label="Selector de idioma">
+    <div
+      className="language-switcher"
+      role="group"
+      aria-label={t('language.selectorLabel')}
+    >
       <button
         type="button"
         className={currentLanguage === 'es' ? 'active' : ''}
+        aria-label={t('language.selectSpanish')}
+        aria-pressed={currentLanguage === 'es'}
         onClick={() => changeLanguage('es')}
       >
         ES
@@ -23,6 +29,8 @@ function LanguageSwitcher() {
       <button
         type="button"
         className={currentLanguage === 'en' ? 'active' : ''}
+        aria-label={t('language.selectEnglish')}
+        aria-pressed={currentLanguage === 'en'}
         onClick={() => changeLanguage('en')}
       >
         EN

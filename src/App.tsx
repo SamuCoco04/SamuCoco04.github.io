@@ -6,19 +6,24 @@ import EducationSection from './sections/EducationSection'
 import ProjectsSection from './sections/ProjectsSection'
 import Footer from './components/Footer'
 import LanguageSwitcher from './components/LanguageSwitcher'
+import { useDocumentMetadata } from './hooks/useDocumentMetadata'
 import './App.css'
 
 function App() {
   const { t } = useTranslation()
+  useDocumentMetadata()
 
   return (
     <div className="app">
+      <a className="skip-link" href="#main-content">
+        {t('accessibility.skipToContent')}
+      </a>
       <header className="header">
         <a className="logo" href="#home" aria-label="Samuel Coco">
           Samuel Coco
         </a>
 
-        <nav className="navigation" aria-label="Navegación principal">
+        <nav className="navigation" aria-label={t('navigation.ariaLabel')}>
           <a href="#home">{t('navigation.home')}</a>
           <a href="#about">{t('navigation.about')}</a>
           <a href="#projects">{t('navigation.projects')}</a>
@@ -29,7 +34,7 @@ function App() {
         <LanguageSwitcher />
       </header>
 
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <section id="home" className="hero">
           <div className="availability-status">
             <span className="status-dot" aria-hidden="true" />

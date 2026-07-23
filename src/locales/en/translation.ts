@@ -1,5 +1,9 @@
 const en = {
+  accessibility: {
+    skipToContent: 'Skip to content',
+  },
   navigation: {
+    ariaLabel: 'Main navigation',
     home: 'Home',
     about: 'About me',
     projects: 'Projects',
@@ -53,6 +57,7 @@ const en = {
     conclusion:
       'When generation becomes fast, validation becomes the real bottleneck.',
     action: 'Explore the project and its iterations',
+    technologiesLabel: 'Project technologies',
   },
   sports: {
     label: 'Beyond software',
@@ -446,6 +451,9 @@ const en = {
   language: {
     spanish: 'Spanish',
     english: 'English',
+    selectorLabel: 'Language selector',
+    selectSpanish: 'Change language to Spanish',
+    selectEnglish: 'Change language to English',
   },
 }
 

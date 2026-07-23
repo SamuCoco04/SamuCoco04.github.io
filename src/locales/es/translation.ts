@@ -1,5 +1,9 @@
 const es = {
+  accessibility: {
+    skipToContent: 'Saltar al contenido',
+  },
   navigation: {
+    ariaLabel: 'Navegación principal',
     home: 'Inicio',
     about: 'Sobre mí',
     projects: 'Proyectos',
@@ -53,6 +57,7 @@ const es = {
     conclusion:
       'Cuando generar se vuelve rápido, validar se convierte en el verdadero cuello de botella.',
     action: 'Explorar el proyecto y sus iteraciones',
+    technologiesLabel: 'Tecnologías del proyecto',
   },
   sports: {
     label: 'Más allá del software',
@@ -446,6 +451,9 @@ const es = {
   language: {
     spanish: 'Español',
     english: 'Inglés',
+    selectorLabel: 'Selector de idioma',
+    selectSpanish: 'Cambiar el idioma a español',
+    selectEnglish: 'Cambiar el idioma a inglés',
   },
 }
 
